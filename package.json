@@ -1,10 +1,11 @@
 {
-  "name": "staticRendering",
+  "name": "staticrendering",
   "version": "1.0.0",
   "description": "Its a small nodejs application that I did for learning.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "Saroj Shrestha",
   "license": "ISC",
