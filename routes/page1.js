@@ -1,10 +1,7 @@
 const path = require('path');
 
 const express = require('express');
-const bodyParser = require('body-parser');
 const routes = express.Router();
-
-routes.use(bodyParser.urlencoded());
 
 routes.get(
     '/page1',(req, res, next)=>{
@@ -14,7 +11,7 @@ routes.get(
 
 routes.post(
     '/page1', (req, res, next)=>{
-        console.log('from Page 1: ' + req.body.message);
+        console.log('from Page 1: ' + req.body.message + " length: " + req.body.message.length);
         res.redirect('/page1');
     }
 );
