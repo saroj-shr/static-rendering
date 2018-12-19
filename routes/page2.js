@@ -5,7 +5,9 @@ const routes = express.Router();
 
 routes.get(
     '/page2',(req, res, next)=>{
-        res.sendFile(path.join(__dirname, '..', 'views', 'page2.html'))
+        res.render('page2', {
+            pageTitle: 'Page 2'
+        })
     }
 );
 
